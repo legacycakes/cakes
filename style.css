@@ -29,17 +29,29 @@ p{
  font-family: verdana;
  color:goldenrod;
 }
+#legacy{
+ margin: 20px 20px;
+ display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
 #box{
  margin-left: auto;
  margin-right: auto;
  height: 900%;
- width:100%;
+ width:80%;
  padding: 8px;
  position: relative;
 background-color: #222222;
 overflow: hidden;
+display: flex;
+
 }
 #in{
+ display: flex;
+ justify-content: center;
+ align-items: center;
  height: 100%;
  width:100%;
  position: relative;
@@ -47,14 +59,18 @@ overflow: hidden;
 background-color: white;
 }
 h1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
  font-size: 200px;
-
+text-align: center;
  background-image: url(assets/legacy.avif);
  background-size:contain;
  background-position: center;
  background-clip: text;
  -webkit-background-clip: text;
  color:transparent;
+ flex-wrap: wrap;
 }
 #box::after{
  content: "";
@@ -281,4 +297,27 @@ flex-wrap: wrap;
  display:flex;
  align-items: center;
  justify-content: space-between;
+}
+@media(max-width:870px){
+ h1{
+font-size: 150px;
+ }
+ #in{
+  
+ }
+}
+@media(max-width:700px){
+ h1{
+  font-size: 100px;
+   }
+}
+@media(max-width:500px){
+ h1{
+  font-size: 80px;
+   }
+}
+@media(max-width:390px){
+ h1{
+  font-size: 60px;
+   }
 }
