@@ -6,8 +6,9 @@
 :root{
  --pr:white;
  --sr:#1a1a1a;
+ --logo:#ff8787;
 }
-hr{
+.l hr{
  border-top:3px dashed rgba(128, 128, 128, 0.494);
 }
 .dark{
@@ -21,10 +22,56 @@ hr{
  box-sizing:border-box;
  font-family: 'Spartan',sans-serif,'sar';
 }
+p{
+ font-weight: 500;
+ font-size: 15px;
+ line-height: 40px;
+ font-family: verdana;
+ color:goldenrod;
+}
+#box{
+ margin-left: auto;
+ margin-right: auto;
+ height: 900%;
+ width:100%;
+ padding: 8px;
+ position: relative;
+background-color: #222222;
+overflow: hidden;
+}
+#in{
+ height: 100%;
+ width:100%;
+ position: relative;
+ z-index: 99;
+background-color: white;
+}
 h1{
- font-size: 50px;
- line-height: 64px;
- color:#222;
+ font-size: 200px;
+
+ background-image: url(assets/legacy.avif);
+ background-size:contain;
+ background-position: center;
+ background-clip: text;
+ -webkit-background-clip: text;
+ color:transparent;
+}
+#box::after{
+ content: "";
+ position: absolute;
+ top: 50%;
+ left:50%;
+ transform: translate(-50%,-50%) rotate(225deg);
+ height: 500px;
+ width:110%;
+ background-color: white;
+ animation: move 3s infinite;
+}
+@keyframes move {
+ 100%{
+  transform: translate(-50%,-50%) rotate(45deg);
+ }
+ 
 }
 h2{
  font-size: 46px;
