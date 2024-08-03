@@ -8,6 +8,12 @@
  --sr:#1a1a1a;
  --logo:#ff8787;
 }
+exo-2-f {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
 .l hr{
  border-top:3px dashed rgba(128, 128, 128, 0.494);
 }
