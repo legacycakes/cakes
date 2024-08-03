@@ -40,8 +40,11 @@ p{
  display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-
 }
+#logo{
+ font-family:"Exo 2";
+}
+
 #box{
  margin-left: auto;
  margin-right: auto;
