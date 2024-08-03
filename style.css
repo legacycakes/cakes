@@ -41,8 +41,12 @@ p{
 justify-content: space-between;
 flex-wrap: wrap;
 }
+.front{
+font-family:"Exo 2";
+ font-weight:600;
+}
 #logo{
- font-family:"Exo 2";
+ font-family:cursive;
 }
 
 #box{
