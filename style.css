@@ -159,6 +159,9 @@ right:30px;
  border-radius: 15px;
  transition: 0.3s ease;
 }
+#he{
+   margin-bottom: 12vw;
+}
 .fb:hover{
  color:#25d366;
  background-color: white;
